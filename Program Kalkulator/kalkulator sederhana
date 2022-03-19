@@ -1,0 +1,47 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int tambah(int angka1,int angka2){
+	int total= angka1 + angka2;
+	return total;
+}
+int kurang(int angka1,int angka2){
+	int total = angka1-angka2;
+	return total;
+}
+int kali(int angka1,int angka2){
+	int total = angka1 * angka2;
+	return total;
+}
+float bagi(float angka1,float angka2){
+	float total= angka1 / angka2;
+	return total;
+}
+int main(){
+	int a,b,x,n;
+    cout<<"PROGRAM KALKULATOR"<<endl;
+	cout<<"Menu Operasi:"<<endl;
+	cout<<"  1. Penambahan"<<endl;
+	cout<<"  2. Pengurangan"<<endl;
+	cout<<"  3. Perkalian"<<endl;
+	cout<<"  4. Pembagian"<<endl;
+	cout<<"Pilih Menu No: ";
+	cin >> n;
+	cout<< "Masukkan Angka Pertama : ";
+	cin >> a;
+	cout<< "Masukkan Angka Kedua : ";
+	cin >> b;
+    if(n == 1){
+		cout<<"Hasil "<<a<<" + "<<b<<" = "<<tambah(a,b);
+	}else if(n == 2){
+		cout<<"Hasil "<<a<<" - "<<b<<" = "<<kurang(a,b);
+	}else if(n == 3){
+		cout<<"Hasil "<<a<<" x "<<b<<" = "<<kali(a,b);
+	}else if(n == 4){
+		cout<<"Hasil "<<a<<" / "<<b<<" = "<<bagi(a,b);
+	}else {
+		cout<<"Salah menu!";
+	}
+	return 0;
+}
