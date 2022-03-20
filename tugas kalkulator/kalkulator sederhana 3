@@ -1,0 +1,88 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+void penambahan(){
+	int x, y;
+	
+	cout<<"penambahan"<<endl;
+	cout<<"masukan nilai pertama : ";
+	cin>>x;
+	cout<<"masukan nilai kedua : ";
+	cin>>y;
+	
+	int result = x + y;
+	cout<<x<<" + "<<y<<" = "<<result<<endl;
+}
+
+void pengurangan(){
+	int x, y;
+	
+	cout<<"pengurangan"<<endl;	
+	cout<<"masukan nilai pertama : ";
+	cin>>x;
+	cout<<"masukan nilai kedua : ";
+	cin>>y;
+	
+	int result = x - y;
+	cout<<x<<" - "<<y<<" = "<<result<<endl;
+}
+
+void perkalian(){
+	int x, y;
+	
+	cout<<"perkalian"<<endl;
+	cout<<"masukan nilai pertama : ";
+	cin>>x;
+	cout<<"masukan nilai kedua : ";
+	cin>>y;
+	
+	int result = x * y;
+	cout<<x<<" x "<<y<<" = "<<result<<endl;
+}
+
+void pembagian(){
+	int x, y;
+	
+	cout<<"pembagian"<<endl;
+	cout<<"masukan nilai pertama : ";
+	cin>>x;
+	cout<<"masukan nilai kedua : ";
+	cin>>y;
+	
+	int result = x / y;
+	cout<<x<<" / "<<y<<" = "<<result<<endl;
+}
+
+void perpangkatan(){
+	int x;
+	
+	cout<<"perpangkatan"<<endl;
+	cout<<"masukan nilai yang ingin dipangkatkan(kuadrat) : ";
+	cin>>x;
+	
+	int result = x * x;
+	cout<<"perpangkatan(kuadrat) "<<x<<" = "<<result<<endl;
+}
+
+void akarPangkat(){
+	int x;
+	
+	cout<<"akar pangkat"<<endl;
+	cout<<"masukan nilai yang ingin dipangkatkan(kuadrat) : ";
+	cin>>x;
+	
+	int result = sqrt(x);
+	cout<<"akar pangkat "<<x<<" = "<<result<<endl;
+}
+
+int main(){
+	penambahan();
+	pengurangan();
+	perkalian();
+	pembagian();
+	perpangkatan();
+	akarPangkat();
+	
+	return 0;
+}
